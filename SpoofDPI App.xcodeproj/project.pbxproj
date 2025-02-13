@@ -78,7 +78,7 @@
 		57A420282C60D98500639250 = {
 			isa = PBXGroup;
 			children = (
-				57A420332C60D98500639250 /* SpoofDPI_App */,
+				57A420332C60D98500639250 /* SpoofDPI App */,
 				57A420322C60D98500639250 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +91,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		57A420332C60D98500639250 /* SpoofDPI_App */ = {
+		57A420332C60D98500639250 /* SpoofDPI App */ = {
 			isa = PBXGroup;
 			children = (
 				57A420342C60D98500639250 /* App.swift */,
@@ -104,7 +104,7 @@
 				57A420642C60EA4600639250 /* Localizable.xcstrings */,
 				57A4203D2C60D98600639250 /* SpoofDPI.entitlements */,
 			);
-			path = "SpoofDPI_App";
+			path = "SpoofDPI App";
 			sourceTree = "<group>";
 		};
 		57A420432C60DB9A00639250 /* Scenes */ = {
@@ -173,9 +173,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		57A420302C60D98500639250 /* SpoofDPI_App */ = {
+		57A420302C60D98500639250 /* SpoofDPI App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 57A420402C60D98600639250 /* Build configuration list for PBXNativeTarget "SpoofDPI_App" */;
+			buildConfigurationList = 57A420402C60D98600639250 /* Build configuration list for PBXNativeTarget "SpoofDPI App" */;
 			buildPhases = (
 				57A4202D2C60D98500639250 /* Sources */,
 				57A4202E2C60D98500639250 /* Frameworks */,
@@ -185,12 +185,12 @@
 			);
 			dependencies = (
 			);
-			name = "SpoofDPI_App";
+			name = "SpoofDPI App";
 			packageProductDependencies = (
 				57A4209C2C62886200639250 /* FirebaseAnalytics */,
 				57A4209E2C62886200639250 /* FirebaseCrashlytics */,
 			);
-			productName = "SpoofDPI_App";
+			productName = "SpoofDPI App";
 			productReference = 57A420312C60D98500639250 /* SpoofDPI App.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -209,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 57A4202C2C60D98500639250 /* Build configuration list for PBXProject "SpoofDPI_App" */;
+			buildConfigurationList = 57A4202C2C60D98500639250 /* Build configuration list for PBXProject "SpoofDPI App" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -226,7 +226,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				57A420302C60D98500639250 /* SpoofDPI_App */,
+				57A420302C60D98500639250 /* SpoofDPI App */,
 			);
 		};
 /* End PBXProject section */
@@ -397,7 +397,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon";
-				CODE_SIGN_ENTITLEMENTS = "SpoofDPI_App/SpoofDPI.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "SpoofDPI App/SpoofDPI.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -423,7 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon";
-				CODE_SIGN_ENTITLEMENTS = "SpoofDPI_App/SpoofDPI.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "SpoofDPI App/SpoofDPI.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -448,7 +448,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		57A4202C2C60D98500639250 /* Build configuration list for PBXProject "SpoofDPI_App" */ = {
+		57A4202C2C60D98500639250 /* Build configuration list for PBXProject "SpoofDPI App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				57A4203E2C60D98600639250 /* Debug */,
@@ -457,7 +457,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		57A420402C60D98600639250 /* Build configuration list for PBXNativeTarget "SpoofDPI_App" */ = {
+		57A420402C60D98600639250 /* Build configuration list for PBXNativeTarget "SpoofDPI App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				57A420412C60D98600639250 /* Debug */,
