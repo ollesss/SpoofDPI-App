@@ -42,6 +42,7 @@ jobs:
       TAG_NAME: ${{ needs.draft_release.outputs.tag_name }}
       CGO_ENABLED: 0
     steps:
+      - uses: actions/checkout@v4
       - name: Build App
         uses: sersoft-gmbh/xcodebuild-action@v3
         with:
