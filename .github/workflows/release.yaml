@@ -34,12 +34,18 @@ jobs:
   build_and_publish:
     runs-on: macos-latest
     needs: draft_release
+    permissions:
+      contents: write
+      pull-requests: write
+    env: 
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      TAG_NAME: ${{ needs.draft_release.outputs.tag_name }}
+      CGO_ENABLED: 0
     steps:
       - name: Build App
         uses: sersoft-gmbh/xcodebuild-action@v3
         with:
-          project: ./SpoofDPI App.xcodeproj
-          clonedSourcePackagesDirPath: ./SpoofDPI App
-          resolvePackageDependencies: true
+          project: SpoofDPI App.xcodeproj
+          cloned-source-packages-path: SpoofDPI App
           destination: platform=macOS
           action: build
