@@ -48,6 +48,7 @@ jobs:
         with:
           project: SpoofDPI App.xcodeproj
           scheme: SpoofDPI App
+          build-settings: ONLY_ACTIVE_ARCH=NO
           arch: x86_64 
           destination: platform=macOS
           derived-data-path: ./build
@@ -67,6 +68,7 @@ jobs:
         with:
           project: SpoofDPI App.xcodeproj
           scheme: SpoofDPI App
+          build-settings: ONLY_ACTIVE_ARCH=NO
           arch: arm64 
           destination: platform=macOS
           derived-data-path: ./build
