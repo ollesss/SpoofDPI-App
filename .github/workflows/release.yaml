@@ -59,4 +59,4 @@ jobs:
       - name: Upload to Release
         run: | 
           tar -zcvf "SpoofDPI App-$TAG_NAME.tar.gz" ./build/Build/Products/Debug/SpoofDPI\ App.app
-          gh release upload $TAG_NAME "./build/Build/Products/Debug/SpoofDPI App-$TAG_NAME.tar.gz"
+          gh release upload $TAG_NAME "SpoofDPI App-$TAG_NAME.tar.gz"
