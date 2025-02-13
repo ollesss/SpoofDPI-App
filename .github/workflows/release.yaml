@@ -37,5 +37,9 @@ jobs:
     steps:
       - name: Build App
         uses: sersoft-gmbh/xcodebuild-action@v3
-        run: |
-          xcodebuild -project ./SpoofDPI App.xcodeproj -clonedSourcePackagesDirPath ./SpoofDPI App -resolvePackageDependencies -destination generic/platform=macOS build
+        with:
+          project: ./SpoofDPI App.xcodeproj
+          clonedSourcePackagesDirPath: ./SpoofDPI App
+          resolvePackageDependencies: true
+          destination: platform=macOS
+          action: build
