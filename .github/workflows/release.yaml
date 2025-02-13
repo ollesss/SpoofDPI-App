@@ -54,8 +54,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: SpoofDPI App.app
-          path: SpoofDPI App.app
+          path: ./SpoofDPI App/SpoofDPI App.app
       - name: Upload to Release
         run: | 
-          zip -j "SpoofDPI App-$TAG_NAME.zip" ./SpoofDPI App.app && rm -rf ./SpoofDPI App.app
-          gh release upload $TAG_NAME "./SpoofDPI App-$TAG_NAME.zip"
+          zip -j "SpoofDPI App-$TAG_NAME.zip" ./SpoofDPI App/SpoofDPI App.app
+          gh release upload $TAG_NAME "./SpoofDPI App/SpoofDPI App-$TAG_NAME.zip"
