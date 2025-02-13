@@ -51,12 +51,12 @@ jobs:
           destination: platform=macOS
           derived-data-path: ./build
           action: build
-      - name: Save App
-        uses: actions/upload-artifact@v4
-        with:
-          name: SpoofDPI App.app
-          path: ./build/Build/Products/Debug/SpoofDPI App.app
+      # - name: Save App
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: SpoofDPI App.app
+      #     path: ./build/Build/Products/Debug/SpoofDPI App.app
       - name: Upload to Release
         run: | 
-          zip -j "SpoofDPI App-$TAG_NAME.zip" ./build/Build/Products/Debug/SpoofDPI App.app
+          zip -r "SpoofDPI App-$TAG_NAME.zip" ./build/Build/Products/Debug/SpoofDPI\ App.app
           gh release upload $TAG_NAME "./build/Build/Products/Debug/SpoofDPI App-$TAG_NAME.zip"
