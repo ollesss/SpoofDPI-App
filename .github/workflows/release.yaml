@@ -53,7 +53,8 @@ jobs:
           action: build
       - name: Location
         run: | 
-          ls&&pwd
+          cd build
+          ls
       - name: Save App
         uses: actions/upload-artifact@v4
         with:
