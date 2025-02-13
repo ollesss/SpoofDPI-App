@@ -58,5 +58,5 @@ jobs:
       #     path: ./build/Build/Products/Debug/SpoofDPI App.app
       - name: Upload to Release
         run: | 
-          zip -r "SpoofDPI App-$TAG_NAME.zip" ./build/Build/Products/Debug/SpoofDPI\ App.app
+          zip -rj "SpoofDPI App-$TAG_NAME.zip" ./build/Build/Products/Debug/SpoofDPI\ App.app
           gh release upload $TAG_NAME "./build/Build/Products/Debug/SpoofDPI App-$TAG_NAME.zip"
