@@ -32,6 +32,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   build_and_publish:
+    runs-on: macos-latest
+    needs: draft_release
     steps:
       - name: Build App
         uses: sersoft-gmbh/xcodebuild-action@v3
