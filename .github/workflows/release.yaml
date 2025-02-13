@@ -47,5 +47,6 @@ jobs:
         uses: sersoft-gmbh/xcodebuild-action@v3
         with:
           project: SpoofDPI App.xcodeproj
+          scheme: SpoofDPI App
           destination: platform=macOS
           action: build
