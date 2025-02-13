@@ -53,14 +53,14 @@ jobs:
           action: build
       - name: Location
         run: | 
-          cd build
+          cd /build/Build/Products/
           ls
       - name: Save App
         uses: actions/upload-artifact@v4
         with:
           name: SpoofDPI App.app
-          path: ./build/SpoofDPI App.app
+          path: /build/Build/Products/SpoofDPI App-macOS/SpoofDPI App.app
       - name: Upload to Release
         run: | 
-          zip -j "SpoofDPI App-$TAG_NAME.zip" ./build/SpoofDPI\ App.app
-          gh release upload $TAG_NAME "./build/SpoofDPI App-$TAG_NAME.zip"
+          zip -j "SpoofDPI App-$TAG_NAME.zip" /build/Build/Products/SpoofDPI\ App-macOS/SpoofDPI\ App.app
+          gh release upload $TAG_NAME "/build/Build/Products/SpoofDPI\ App-macOS/SpoofDPI App-$TAG_NAME.zip"
