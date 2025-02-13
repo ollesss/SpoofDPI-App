@@ -50,3 +50,12 @@ jobs:
           scheme: SpoofDPI App
           destination: platform=macOS
           action: build
+      - name: Save App
+        uses: actions/upload-artifact@v3
+        with:
+          name: SpoofDPI App.app
+          path: SpoofDPI App.app
+      - name: Upload to Release
+        run: | 
+          zip -j "SpoofDPI App-$TAG_NAME.zip" ./SpoofDPI App.app && rm -rf ./SpoofDPI App.app
+          gh release upload $TAG_NAME "./SpoofDPI App-$TAG_NAME.zip"
