@@ -57,5 +57,5 @@ jobs:
           path: ./SpoofDPI App/SpoofDPI App.app
       - name: Upload to Release
         run: | 
-          zip -j "SpoofDPI App-$TAG_NAME.zip" ./SpoofDPI App/SpoofDPI App.app
+          zip -j "SpoofDPI App-$TAG_NAME.zip" ./SpoofDPI\ App/SpoofDPI\ App.app
           gh release upload $TAG_NAME "./SpoofDPI App/SpoofDPI App-$TAG_NAME.zip"
