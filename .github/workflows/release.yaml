@@ -51,7 +51,7 @@ jobs:
           destination: platform=macOS
           action: build
       - name: Save App
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: SpoofDPI App.app
           path: SpoofDPI App.app
