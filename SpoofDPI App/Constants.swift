@@ -15,6 +15,6 @@ enum Constants {
     static let supportEmailAddress = "byedpiDPIApp@proton.me"
     static let supportEmailURL = URL(string: "mailto:" + supportEmailAddress)!
     
-    static let libraryProcessNamePrefix = "ciadpi_"
+    static let libraryProcessNamePrefix = "ciadpi-"
     static let libraryVersion = "0.16.5"
 }
