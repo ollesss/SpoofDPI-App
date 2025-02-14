@@ -48,8 +48,8 @@ jobs:
         run: |
           echo $PROJECT_PATH
           cd $PROJECT_PATH/SpoofDPI\ App/Other/Binaries/
-          chmod +x spoofdpi-arm
-          chmod +x spoofdpi-x64
+          chmod +x ciadpi-arm
+          chmod +x ciadpi-x64
       - uses: actions/checkout@v4
       - name: Build App
         uses: sersoft-gmbh/xcodebuild-action@v3
