@@ -41,11 +41,13 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       TAG_NAME: ${{ needs.draft_release.outputs.tag_name }}
       CGO_ENABLED: 0
+      PROJECT_PATH: ${{ github.workspace }}
     steps:
       - uses: actions/checkout@v4
       - name: Make Binaries EXEC
         run: |
-          cd /SpoofDPI-App/SpoofDPI\ App/Other/Binaries/
+          echo $PROJECT_PATH
+          cd $PROJECT_PATH/SpoofDPI\ App/Other/Binaries/
           chmod +x spoofdpi-arm
           chmod +x spoofdpi-x64
       - uses: actions/checkout@v4
