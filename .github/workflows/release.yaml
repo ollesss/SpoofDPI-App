@@ -43,6 +43,12 @@ jobs:
       CGO_ENABLED: 0
     steps:
       - uses: actions/checkout@v4
+      - name: Make Binaries EXEC
+        run: |
+          cd /SpoofDPI\ App/Other/Binaries
+          chmod +x spoofdpi-arm
+          chmod +x spoofdpi-x64
+      - uses: actions/checkout@v4
       - name: Build App
         uses: sersoft-gmbh/xcodebuild-action@v3
         with:
