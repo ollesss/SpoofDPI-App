@@ -24,8 +24,8 @@
 		57A420672C60FB3D00639250 /* ProtectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A420662C60FB3D00639250 /* ProtectionService.swift */; };
 		57A420702C6158B100639250 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57A4206F2C6158B100639250 /* GoogleService-Info.plist */; };
 		57A420912C62477900639250 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A420902C62477900639250 /* Utils.swift */; };
-		57A420942C624D1D00639250 /* spoofdpi-arm in Resources */ = {isa = PBXBuildFile; fileRef = 57A420922C624D1D00639250 /* spoofdpi-arm */; };
-		57A420952C624D1D00639250 /* spoofdpi-x64 in Resources */ = {isa = PBXBuildFile; fileRef = 57A420932C624D1D00639250 /* spoofdpi-x64 */; };
+		57A420942C624D1D00639250 /* ciadpi-arm in Resources */ = {isa = PBXBuildFile; fileRef = 57A420922C624D1D00639250 /* ciadpi-arm */; };
+		57A420952C624D1D00639250 /* ciadpi-x64 in Resources */ = {isa = PBXBuildFile; fileRef = 57A420932C624D1D00639250 /* ciadpi-x64 */; };
 		57A4209A2C6259D900639250 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A420992C6259D900639250 /* Bundle.swift */; };
 		57A4209D2C62886200639250 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 57A4209C2C62886200639250 /* FirebaseAnalytics */; };
 		57A4209F2C62886200639250 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 57A4209E2C62886200639250 /* FirebaseCrashlytics */; };
@@ -54,8 +54,8 @@
 		57A420662C60FB3D00639250 /* ProtectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectionService.swift; sourceTree = "<group>"; };
 		57A4206F2C6158B100639250 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		57A420902C62477900639250 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		57A420922C624D1D00639250 /* spoofdpi-arm */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "spoofdpi-arm"; sourceTree = "<group>"; };
-		57A420932C624D1D00639250 /* spoofdpi-x64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "spoofdpi-x64"; sourceTree = "<group>"; };
+		57A420922C624D1D00639250 /* ciadpi-arm */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "ciadpi-arm"; sourceTree = "<group>"; };
+		57A420932C624D1D00639250 /* ciadpi-x64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "ciadpi-x64"; sourceTree = "<group>"; };
 		57A420992C6259D900639250 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		57A420A02C6288E000639250 /* UpdateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateService.swift; sourceTree = "<group>"; };
 		57D9BC032C6BA1EE003EEDC0 /* Configurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
@@ -164,8 +164,8 @@
 		57A420962C624DC800639250 /* Binaries */ = {
 			isa = PBXGroup;
 			children = (
-				57A420922C624D1D00639250 /* spoofdpi-arm */,
-				57A420932C624D1D00639250 /* spoofdpi-x64 */,
+				57A420922C624D1D00639250 /* ciadpi-arm */,
+				57A420932C624D1D00639250 /* ciadpi-x64 */,
 			);
 			path = Binaries;
 			sourceTree = "<group>";
@@ -236,9 +236,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57A420942C624D1D00639250 /* spoofdpi-arm in Resources */,
+				57A420942C624D1D00639250 /* ciadpi-arm in Resources */,
 				57A420652C60EA4600639250 /* Localizable.xcstrings in Resources */,
-				57A420952C624D1D00639250 /* spoofdpi-x64 in Resources */,
+				57A420952C624D1D00639250 /* ciadpi-x64 in Resources */,
 				57A420392C60D98600639250 /* Assets.xcassets in Resources */,
 				57A420702C6158B100639250 /* GoogleService-Info.plist in Resources */,
 			);
